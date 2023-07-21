@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "ArchivoNarrow";
+  src: local("ArchivoNarrow"),
+    url("./fonts/ArchivoNarrow-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archivo";
+  src: local("Archivo"), url("./fonts/Archivo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ArchivoBold";
+  src: local("ArchivoBold"), url("./fonts/Archivo-Bold.ttf") format("truetype");
+}
+
+:root {
+  font-family: Archivo, sans-serif;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --white: #fff;
+  --primary: #2462d1;
+  --background: #edf2f7;
+
+  --purple: #dabfff;
+  --purple-100: #f7f1ff;
+  --purple-200: #f0e5ff;
+  --purple-300: #e9d9ff;
+  --purple-400: #46426d;
+
+  --yellow: #ffd6b3;
+  --yellow-100: #fef6ef;
+  --yellow-200: #ffe4cc;
+  --yellow-300: #ffd6b3;
+  --yellow-400: #66421f;
+
+  --blue: #99d1ff;
+  --blue-100: #e6f4ff;
+  --blue-200: #bfe3ff;
+  --blue-300: #99d1ff;
+  --blue-400: #003a66;
+
+  --green: #81dde5;
+  --green-100: #def5f7;
+  --green-200: #aaecf2;
+  --green-300: #81dde5;
+  --green-400: #2a5154;
+
+  --pink: #ffbfd2;
+  --pink-100: #fff2f6;
+  --pink-200: #ffd9e4;
+  --pink-300: #ffbfd2;
+  --pink-400: #773a47;
+
+  --gray: #cbd5e0;
+  --gray-100: #f2f7fa;
+  --gray-111: #bfcfe0;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e0;
+  --gray-400: #4a5568;
+  --gray-500: #46426d;
+  --gray-700: #062952;
+  --gray-800: #2d3748;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+}
