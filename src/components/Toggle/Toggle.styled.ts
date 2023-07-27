@@ -13,10 +13,10 @@ export const ToggleContainer = styled.label`
 export const ToggleButton = styled.div<{ color: string }>`
   height: 1.37406rem;
   width: 7.125rem;
-  border-radius: 15px;
+  border-radius: 10.5px;
   background-color: ${({ color }) => `var(--${color}-200)`};
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 11px;
   position: relative;
 
   &:hover {
@@ -27,7 +27,7 @@ export const ToggleButton = styled.div<{ color: string }>`
   &::after {
     content: "";
     background-color: ${({ color }) => `var(--${color})`};
-    border-radius: 15px;
+    border-radius: 10.5px;
     display: block;
     height: 1.37406rem;
     position: relative;
@@ -42,7 +42,7 @@ export const ToggleInput = styled.input`
 
   &:checked + ${ToggleButton} {
     &:after {
-      transform: translateX(200%);
+      transform: translateX(72px);
     }
   }
 `;

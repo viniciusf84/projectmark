@@ -11,9 +11,6 @@ export const ButtonContainer = styled.button`
   border-radius: 34px;
   color: var(--white);
   cursor: pointer;
-  font-weight: 700;
-  margin: 0 0 17px;
-  height: 41px;
   padding: 13px 21px;
   position: relative;
 

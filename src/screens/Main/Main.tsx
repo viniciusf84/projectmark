@@ -69,8 +69,7 @@ function Main() {
 
       <MainContainer>
         <PageTitle>
-          Please select the type of sales pipeline that best fits to your
-          company
+          Please select the type of sales pipeline that best fits to you company
         </PageTitle>
 
         {/* PLANS */}

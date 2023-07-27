@@ -1,59 +1,50 @@
 import styled from "styled-components";
+import { CheckboxContainer } from "../Checkbox/Checkbox.styled";
 
 export const BoxContainer = styled.div`
-  border: 1px solid var(--gray-200);
-  border-radius: 10px;
-  cursor: pointer;
-  margin: 0;
-  padding: 1rem 0.88rem 1.06rem;
   position: relative;
-  height: 15px;
-  transition: 0.2s ease background-color;
-  width: 208px;
 
-  .triangle {
+  .children {
+    position: relative;
+    border: 1px solid var(--gray-200);
+    border-radius: 10.5px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease background-color;
+    height: 47px;
+    width: 208px;
+    z-index: 100;
+  }
+
+  .icon-wrapper {
     opacity: 0;
     position: absolute;
-    bottom: 0;
-  }
-
-  .triangle-container {
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 6px solid var(--white);
-    z-index: 10;
-    bottom: -5px;
-    left: calc(50% - 8px);
-  }
-
-  .triangle-inner {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 7px solid var(--primary);
-    z-index: 1;
-    bottom: -7px;
-    left: calc(50% - 10px);
+    bottom: -9.5px;
+    left: 0;
+    z-index: 0;
   }
 
   &.selected {
-    outline: 2px solid var(--primary);
-    outline-offset: -2px;
+    .children {
+      border-color: transparent;
+    }
 
-    .triangle {
+    .icon-wrapper {
       opacity: 1;
       transition: 0.2s ease border, 0.2s ease opacity;
     }
   }
 
-  &:hover {
-    background-color: var(--background);
-
-    .triangle-container {
-      border-top: 6px solid var(--background);
+  &:not(.selected) {
+    &:hover {
+      .children {
+        background-color: var(--background);
+      }
     }
+  }
+
+  ${CheckboxContainer} {
+    margin: 15px 0 0 14px;
   }
 `;

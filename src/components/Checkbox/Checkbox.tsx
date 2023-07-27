@@ -22,7 +22,7 @@ const CustomCheckbox: React.FC<CustomCheckboxProps> = ({
         onChange={handleChange}
       />
       <CheckMark checked={checked} />
-      {label}
+      <span className="label-span">{label}</span>
     </CheckboxContainer>
   );
 };

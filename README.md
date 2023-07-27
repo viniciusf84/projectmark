@@ -1,4 +1,6 @@
-# Project Mark Challenge
+# ProjectMark Code Challenge
+
+**Tech Stack:** React.js, Typescript, Styled Components
 
 ### Running
 

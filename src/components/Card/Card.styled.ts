@@ -3,9 +3,10 @@ import { styled } from "styled-components";
 export const CardContainer = styled.div<{ backgroundColor: string }>`
   background-color: ${({ backgroundColor = "gray" }) =>
     `var(--${backgroundColor}-100)`};
+  border-radius: 14px 14px 0px 0px;
+  margin-bottom: 2px;
   min-width: 222px;
   height: 558px;
-  border-radius: 10px;
   position: relative;
   opacity: 0;
   visibility: hidden;
@@ -26,9 +27,9 @@ export const CardContainer = styled.div<{ backgroundColor: string }>`
     border-radius: 14px;
     bottom: 0;
     display: block;
-    margin: 0 -10px;
+    margin: 0;
     position: absolute;
-    width: 242px;
+    width: 222px;
     height: 209.381px;
   }
 `;
@@ -37,8 +38,9 @@ export const CardTitle = styled.h2<{ color: string }>`
   color: ${({ color = "gray" }) => `var(--${color}-400)`};
   font-family: ArchivoBold, sans-serif;
   font-size: 0.875rem;
+  height: 0.9815rem;
   margin: 0;
-  padding: 0.92rem 0.88rem 0.85rem;
+  padding: 14.44px 0 13.61px 14px;
   text-transform: uppercase;
 `;
 
@@ -46,7 +48,7 @@ export const CardBody = styled.div<{ color: string }>`
   border: ${({ color = "gray" }) => `1px solid var(--${color}-200)`};
   border-radius: 12px;
   display: block;
-  margin: 9px auto 10px;
-  height: 174.938px;
-  width: 211.5px;
+  margin: 9.42px 5.25px 10px;
+  height: 172.938px;
+  width: 209.5px;
 `;

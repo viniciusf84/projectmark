@@ -5,10 +5,15 @@ export const CheckboxContainer = styled.label`
   align-items: center;
 
   cursor: pointer;
-  color: var(--gray-800);
   font-size: 0.875rem;
-  min-width: 181px;
   letter-spacing: 0.0175rem;
+
+  .label-span {
+    color: var(--gray-800);
+    position: relative;
+    top: -1.5px;
+    left: -1px;
+  }
 `;
 
 export const CheckboxInput = styled.input`
@@ -16,16 +21,17 @@ export const CheckboxInput = styled.input`
 `;
 
 export const CheckMark = styled.div<{ checked: boolean }>`
-  width: 13px;
-  height: 13px;
+  width: 13.5px;
+  height: 12.75px;
   border: ${(props) =>
     props.checked ? "2px solid var(--primary)" : "2px solid var(--gray-300)"};
-  border-radius: 5px;
+  border-radius: 5.25px;
   background-color: ${(props) =>
     props.checked ? "var(--primary)" : "var(--white)"};
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 13.5px;
   position: relative;
+  left: -1px;
   transition: 0.2s ease background-color;
 
   &:hover {
@@ -35,14 +41,12 @@ export const CheckMark = styled.div<{ checked: boolean }>`
 
   &::after {
     content: "";
-    width: 8px;
-    height: 4px;
-    border-top: 2px solid var(--white);
-    border-right: 2px solid var(--white);
-    transform: ${(props) => (props.checked ? "rotate(130deg)" : "rotate(0)")};
+    width: 9px;
+    height: 10px;
+    background-image: url("src/assets/icon_check.svg");
     position: absolute;
     top: 2px;
-    left: 1.5px;
+    left: 2px;
     opacity: ${(props) => (props.checked ? 1 : 0)};
   }
 `;
